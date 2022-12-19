@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>We do a little trolling :troll:</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-epuiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+      table{
+    margin:0 auto;
+    background-color: rgb(0, 195, 255);
+    position: flex;
+      }  
+      .cot{
+    border: none;
+    position: flex;
+      }
+  
+      #btnXeploai{
+    margin-left: 90px;
+    position: flex;
+      }
+  
+      body {
+    font-family: "Lato", sans-serif;
+      }
+  
+      .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+      .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+      .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+      .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  #logo{
+    margin-left: 100px;
+  }
+  
+  body {
+  background-image: url('https://img.freepik.com/free-vector/winter-blue-pink-gradient-background-vector_53876-117276.jpg?w=2000');
+  }
+  
+  html,
+  body {
+  margin: 0;
+  }
+
+  .banner {
+  background: #00d3f8;
+  }
+
+  .banner__content {
+  padding: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  }
+
+  .banner__text {
+  flex-grow: 1;
+  line-height: 1.4;
+  font-family: "Quicksand", sans-serif;
+  }
+
+  .banner__close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  }
+
+  .banner__text,
+  .banner__close > span {
+  color: #ffffff;
+  }
+  .navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+  .navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  }
+
+  .navbar a:hover {
+  background: #ddd;
+  color: black;
+  }
+
+  .main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px;
+  }
+
+  img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  }
+
+  .tab {
+  overflow: hidden;
+  border: 1px solid rgb(0, 131, 253);
+  background-color: #00c2f3;
+  }
+
+  .tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  }
+
+  .tab button:hover {
+  background-color: rgb(0, 108, 248);
+  }
+
+  .tab button.active {
+  background-color: rgb(0, 123, 238);
+  }
+
+  .tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid rgb(0, 110, 255);
+  border-top: none;
+  }
+
+  .recentNews {
+    background-color: rgb(20, 117, 175)  
+  }
+  .recentNews .news-title {
+    text-align:center;
+    padding-top:30px;
+    padding-bottom:30px;
+    font-family: 'nimbus-sans-condensed', sans-serif;
+    font-size:55px;
+    font-weight:bold;
+    color: #fff;
+  }
+  .recentNews .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  .recentNews .ct-blog {
+    margin-bottom: 30px;
+  }
+  .ct-blog .inner {
+    background-color: #FFF;
+    padding: 10px;
+    transition: all 0.2s ease-in-out 0s;
+    cursor: pointer;
+    height: 100%;
+  }
+  .ct-blog .inner:hover {
+    background-color: #e6e6e6;
+  }
+  .ct-blog .fauxcrop {
+    height: 180px;
+    overflow: hidden;
+  }
+  .ct-blog .fauxcrop img {
+    width: 100%;
+  }
+  .ct-blog-content {
+    display: table;
+    padding: 30px 0 28px;
+  }
+  .ct-blog-content .ct-blog-date {
+    border-right: 1px solid #95A5A6;
+    display: table-cell;
+    font-family: "Lato", sans-serif;
+    padding: 0px 18px 0px 15px;
+    text-align: center;
+  }
+  .ct-blog-content .ct-blog-date span {
+    font-size: 16px;
+    color: rgb(20, 117, 175);  
+    font-weight: 700;
+    display: block;
+    line-height: 1;
+  }
+  .ct-blog-content .ct-blog-date strong {
+    font-size: 25px;
+    color: rgb(20, 117, 175);  
+  }
+  .ct-blog-content .ct-blog-header {
+    color: #000;
+    display: table-cell;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+    line-height: 1.1;
+    padding: 0 20px;
+    vertical-align: top;
+  }
+  .btn-news {
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  .btn-news.btn-contests a {
+    color: #fff;
+    font-family: 'nimbus-sans-condensed', sans-serif;
+    font-size: 24px;
+    transition: all 0.2s ease-in-out 0s;
+  }
+  .btn-news.btn-contests a:hover {
+    color: #000;
+  }
+  </style>    
+</head>
+<body>
+  <div class="banner">
+    <div class="banner__content">
+      <div class="banner__text">
+        <strong>Note:</strong> You are accessing a website designed by a high school student who is bad at coding, so it might be a bit worse.
+      </div>
+      <button class="banner__close" type="button">
+        <span class="material-icons">
+          close
+        </span>
+      </button>
+    </div>
+  </div>
+    <img id="logo" src="data:image/jpeg;base64,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" alt="School logo" width="1000" height="100">
+    <div id="userName" class="tab">
+      <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
+      <button class="tablinks" onclick="openCity(event, '10th Grade TT')">10th Grade TT</button>
+      <button class="tablinks" onclick="openCity(event, '11th Grade TT')">11th Grade TT</button>
+      <button class="tablinks" onclick="openCity(event, '12th Grade TT')">12th Grade TT</button>
+    </div>
+    <div id="Home" class="tabcontent">
+      <h3>Home</h3>
+      <h1>1. Information about Gifted Tuyen Quang High School</h1>
+<p>Tuyen Quang High School is located at No. 156 Tran Hung Dao, City. Tuyen Quang, Tuyen Quang province. This is the leading school in education in the province with proud achievements and a very high rate of students entering prestigious universities across the country.</p>
+<h4>1.1. History of the school</h2>
+<p>Gifted Tuyen Quang High School was established on December 27, 1989 under the decision of the People's Committee of Tuyen Quang province in order to implement the policy of the Ministry of Education and Training to encourage the provinces to establish specialized high schools, creating a highlight and contributing to the promotion of high school students. promote the quality of education in the country.
+
+  The school had 7 classes with 135 students on its founding day. The school was assigned the task of discovering and fostering students with intelligent qualities and achieving excellent results in their studies. The objective is to develop students' aptitudes in a number of subjects on the basis of ensuring a comprehensive general education. Besides, educating them to become patriotic, overcoming difficulties, proud and proud of the nation, capable of self-study, scientific research and creative training to have good health to continue. to train talents to meet the requirements of national development.
+  
+  After more than 30 years of building and developing generations of teachers and students, the school's students have made great efforts in teaching and learning, creating great achievements.</p>
+<h4>1.2. Entrance admission scores over the years</h3>
+<p>Tuyen Quang High School for the Gifted has a plan to enroll and benchmark each year based on students' exam results. In addition, the school applies the direct admission method for some students such as:</p>
+
+ <ul>- There are very few ethnic minority students such as Co Lao, La Hu, Pa Then, Ngai, Lo Lo, Pu Peo, etc.</ul>
+  
+<ul>- Ethnic minority students are eligible to apply for national and international prizes for culture; art; sports; National science and technology competition for high school students.</ul>
+  
+  <p>To know the exact enrollment information of the School, parents and students should actively monitor the information channels for the earliest updates.</p>
+  <img src="https://uploads.clevai.edu.vn/uploads/pictures/62664e081a1b852f357a3e07/content_danh-gia-truong-thpt-chuyen-tinh-tuyen-quang-co-tot-khong-1.jpg" alt="The campus is clean, beautiful and green" width="400" height="300">
+<p style="text-align:center">The campus is clean, beautiful and green</p>  
+<h4>1.3. Infrastructure</h4>
+<p>Gifted Tuyen Quang High School currently owns spacious facilities with three classrooms and a row of school buildings. Currently, the school system has met the learning needs of more than 1,500 students and the needs of meals, accommodation and activities of boarding students and teachers.
+  
+  The school is continuing to be invested to complete more items of administrative department; classroom block; block of study support rooms; auxiliary block; sports areas, playgrounds; service block and other ancillary items.
+
+  The school campus is synchronously planned, clean and beautiful, the system of classrooms is fully equipped with equipment to ensure teaching and learning work so that students can study in the best environment.</p>
+<h1>2. Is Gifted Tuyen Quang High School good?</h1>
+<p>Tuyen Quang Provincial High School for the Gifted always maintains the top quality and number of excellent students in the province. The percentage of students classified as good and good always accounts for more than 90%, the percentage of students with good and good conduct is on average 99.43%.</p>
+<p>In the provincial competitions for excellent students, the school has always won proud achievements with many First, Second, and Third prizes, many students have won 2 or 3 times national prizes. Over 30 years of establishment, the school has been honored to receive many noble awards:</p>
+<ul>- Second-class Labor Medal (2004)</ul>
+<ul>- Certificate of Merit from the Prime Minister (2016)</ul>
+<ul>- Certificate of Merit from the Ministry of Education and Training (2015, 2016)</ul>
+<ul>- Emulation flag of the Government (2015, 2017)</ul>
+<ul>- And many other titles and certificates of merit</ul>
+<p>Many generations of the school's students have grown up and become key cadres in the Party, State, mass organizations, talented managers, talented young scientists, psychiatrists. ethics, dedicated teachers, successful businessmen..., contribute their efforts and wisdom to the cause of building and protecting the homeland and the country.</p>
+<img src="https://uploads.clevai.edu.vn/uploads/pictures/62664e0f1a1b852f357a3e08/content_danh-gia-truong-thpt-chuyen-tinh-tuyen-quang-co-tot-khong-3.jpg" alt="The 30th anniversary of the establishment of Tuyen Quang Gifted High School" width="400" height="300">
+<p style="text-align:center">The 30th anniversary of the establishment of Tuyen Quang Gifted High School</p>  
+<h1>3. Tuition fees at Gifted Tuyen Quang High School</h1>
+<p>Information about tuition fees of Gifted Tuyen Quang High School, you refer to from a third source and may vary from semester to semester, for exact tuition fees as well as possible additional fees, please see details at Official website of the school.</p>
+<p>Hopefully, the information that has just been shared will help you make an objective and accurate assessment of the High School for the Gifted in Tuyen Quang province. Wish you will choose for yourself the most suitable school to conquer your dreams.</p>
+    </div>
+
+    <div id="10th Grade TT" class="tabcontent">
+      <table border="1"
+      align="bottom-left">
+   <caption style="caption-side: top">10 English's Class Schedule</caption>
+   <thead>
+       <tr>
+           <th>Monday</th>
+           <th>Tuesday</th>
+           <th>Wednesday</th>
+           <th>Thursday</th>
+           <th>Friday</th>
+           <th>Saturday</th>
+       </tr>
+   </thead>
+   <tr>
+       <td>English</td>
+       <td>Literature</td>
+       <td>Math</td>
+       <td>English</td>
+       <td>Geology</td>
+       <td>Physics</td>
+   </tr>
+   <tr>
+       <td>English</td>
+       <td>Math</td>
+       <td>PE</td>
+       <td>Physics</td>
+       <td>Art</td>
+       <td>Science</td>
+   </tr>
+   <tr>
+       <td>Math</td>
+       <td>Literature</td>
+       <td>Math</td>
+       <td>Geology</td>
+       <td>PE</td>
+       <td>History</td>
+   </tr>
+   <tr>
+       <td>Literature</td>
+       <td>History</td>
+       <td>Science</td>
+       <td>IT</td>
+       <td>Math</td>
+       <td>English</td>
+   </tr>
+</table>
+<p>Every week the timetable will change.</p>
+    </div>
+    
+    <div id="11th Grade TT" class="tabcontent">
+      <table border="1"
+      align="bottom-left">
+   <caption style="caption-side: top">11 English's Class Schedule</caption>
+   <thead>
+       <tr>
+           <th>Monday</th>
+           <th>Tuesday</th>
+           <th>Wednesday</th>
+           <th>Thursday</th>
+           <th>Friday</th>
+           <th>Saturday</th>
+       </tr>
+   </thead>
+   <tr>
+       <td>Literature</td>
+       <td>Literature</td>
+       <td>Math</td>
+       <td>English</td>
+       <td>Geology</td>
+       <td>Geology</td>
+   </tr>
+   <tr>
+       <td>Math</td>
+       <td>Math</td>
+       <td>PE</td>
+       <td>PE</td>
+       <td>Art</td>
+       <td>Science</td>
+   </tr>
+   <tr>
+       <td>Math</td>
+       <td>Literature</td>
+       <td>Literature</td>
+       <td>Geology</td>
+       <td>PE</td>
+       <td>History</td>
+   </tr>
+   <tr>
+       <td>Literature</td>
+       <td>History</td>
+       <td>History</td>
+       <td>IT</td>
+       <td>Math</td>
+       <td>Math</td>
+   </tr>
+</table>
+<p>Every week the timetable will change.</p>
+</div>
+ <div id="12th Grade TT" class="tabcontent">
+      <table border="1"
+      align="bottom-left">
+   <caption style="caption-side: top">12 English's Class Schedule</caption>
+   <thead>
+       <tr>
+           <th>Monday</th>
+           <th>Tuesday</th>
+           <th>Wednesday</th>
+           <th>Thursday</th>
+           <th>Friday</th>
+           <th>Saturday</th>
+       </tr>
+   </thead>
+   <tr>
+       <td>English</td>
+       <td>Math</td>
+       <td>Math</td>
+       <td>English</td>
+       <td>Physics</td>
+       <td>Physics</td>
+   </tr>
+   <tr>
+       <td>English</td>
+       <td>Math</td>
+       <td>PE</td>
+       <td>Science</td>
+       <td>Art</td>
+       <td>Literature</td>
+   </tr>
+   <tr>
+       <td>Math</td>
+       <td>Literature</td>
+       <td>Math</td>
+       <td>History</td>
+       <td>PE</td>
+       <td>History</td>
+   </tr>
+   <tr>
+       <td>Literature</td>
+       <td>History</td>
+       <td>Science</td>
+       <td>IT</td>
+       <td>IT</td>
+       <td>English</td>
+   </tr>
+</table>
+<p>Every week the timetable will change.</p>
+    </div>
+</div>
+<section class="recentNews">
+  <div class="container">
+    <h2 class="news-title">Recent News</h2>
+    <div class="row">
+      <div class="ct-blog col-sm-6 col-md-4">
+        <div class="inner">
+          <div class="fauxcrop">
+            <a href="#"><img alt="News Entry" src="http://thptchuyen.tuyenquang.edu.vn/publish/thumbnail/64748/540x304xdefault/upload/64748/20210531/woman-girl-taking-notes_8e573df2a6.jpg"></a>
+          </div>
+          <div class="ct-blog-content">
+            <div class="ct-blog-date">
+              <span>June</span><strong>13th</strong>
+            </div>
+            <h3 class="ct-blog-header">
+              Youth union members participate in the skill program "Bringing dreams"
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="ct-blog col-sm-6 col-md-4">
+        <div class="inner">
+          <div class="fauxcrop">
+            <a href="#"><img alt="News Entry" src="https://i-english.vnecdn.net/2022/08/17/tdt246981415929307975914165618-8488-5570-1660702333_500x300.jpg"></a>
+          </div>
+          <div class="ct-blog-content">
+            <div class="ct-blog-date">
+              <span>June</span><strong>15th</strong>
+            </div>
+            <h3 class="ct-blog-header">
+              Two Vietnamese universities among world top 1,000
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="ct-blog col-sm-6 col-md-4">
+        <div class="inner">
+          <div class="fauxcrop">
+            <a href="#"><img alt="News Entry" src="https://i-english.vnecdn.net/2022/08/02/dji00481496116952-1659424960-1-5576-2958-1659425044_300x180.jpg"></a>
+          </div>
+          <div class="ct-blog-content">
+            <div class="ct-blog-date">
+              <span>June</span><strong>19th</strong>
+            </div>
+            <h3 class="ct-blog-header">
+              Vietnamese universities partner with US aid agency in education reform
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="ct-blog col-sm-6 col-md-4">
+        <div class="inner">
+          <div class="fauxcrop">
+            <a href="#"><img alt="News Entry" src="https://i-english.vnecdn.net/2022/07/18/1028571655521240-1658124723-16-5943-8698-1658124802_300x180.jpg"></a>
+          </div>
+          <div class="ct-blog-content">
+            <div class="ct-blog-date">
+              <span>June</span><strong>23th</strong>
+            </div>
+            <h3 class="ct-blog-header">
+              Getting into best high schools brings out worst in urbanization
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="ct-blog col-sm-6 col-md-4">
+        <div class="inner">
+          <div class="fauxcrop">
+            <a href="#"><img alt="News Entry" src="https://i-english.vnecdn.net/2021/09/28/c77514cb0101475d84e1ff52ea6146-3549-6857-1632823402_300x180.jpg"></a>
+          </div>
+          <div class="ct-blog-content">
+            <div class="ct-blog-date">
+              <span>July</span><strong>2nd</strong>
+            </div>
+            <h3 class="ct-blog-header">
+              Learning English at school, a mandatory chore that leads nowhere
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="ct-blog col-sm-6 col-md-4">
+        <div class="inner">
+          <div class="fauxcrop">
+            <a href="#"><img alt="News Entry" src="https://i-english.vnecdn.net/2020/04/16/a135281586873538-1586924141-64-5358-9347-1586995712_300x180.jpg"></a>
+          </div>
+          <div class="ct-blog-content">
+            <div class="ct-blog-date">
+              <span>July</span><strong>16th</strong>
+            </div>
+            <h3 class="ct-blog-header">
+              Vietnam warns against using video conference app Zoom
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="btn-news btn-contests">
+      <a href="#">VIEW ALL NEWS</a>
+    </div>
+  </div>
+</section>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link href="recent-news-boxes.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+      function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+      function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+      document.querySelector(".banner__close").addEventListener("click", function () {
+  this.closest(".banner").style.display = "none";
+});
+
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+  if(localStorage.getItem("userHientai") ){
+    let userName=localStorage.getItem("userHientai")
+    document.getElementById("userName").innerHTML +=`<button class='tablinks' >Hello, ${userName}</span>`
+    document.getElementById("userName").innerHTML +=`<button class='tablinks' onclick ="logout()" > Log out</span>`
+  }else{
+   
+    document.getElementById("userName").innerHTML +="<button onclick=(window.location.href='login_cuzyes.html') class='tablinks' >Login</a>"
+  }
+  function logout(){
+    localStorage.removeItem("userHientai");
+    window.location.reload();
+  }
+  </script>
+</body>
